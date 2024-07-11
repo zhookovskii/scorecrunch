@@ -10,12 +10,8 @@ import android.view.ViewGroup
 import android.view.animation.OvershootInterpolator
 import android.widget.ImageView
 import androidx.core.animation.doOnEnd
-import androidx.fragment.app.activityViewModels
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.NavHostFragment
 import com.zhukovskii.scorecrunch.R
 import com.zhukovskii.scorecrunch.navigation.ScoreCrunchNavigator
-import com.zhukovskii.scorecrunch.viewmodel.ScoreCrunchViewModel
 
 class SplashFragment : Fragment() {
 
