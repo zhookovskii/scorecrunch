@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="5dp"
+    android:background="@drawable/match_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/home_team_crest"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/home_team_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/home_team_icon_text"/>
+
+    <TextView
+        android:id="@+id/home_team_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:breakStrategy="balanced"
+        android:textAlignment="textStart"
+        android:fontFamily="@font/firacode_medium"
+        android:textColor="?colorAccent"
+        android:textSize="12sp"
+        android:text="@string/home_team_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_team_crest"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/live_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/firacode_bold"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        android:text="@string/minute_placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/home_team_crest"
+        app:layout_constraintEnd_toStartOf="@id/away_team_crest"/>
+
+    <TextView
+        android:id="@+id/match_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/firacode_bold"
+        android:textColor="?colorSecondaryVariant"
+        android:textSize="12sp"
+        android:text="@string/paused_text"
+        app:layout_constraintBottom_toTopOf="@+id/score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/home_team_crest"
+        app:layout_constraintEnd_toStartOf="@id/away_team_crest"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/firacode_bold"
+        android:textColor="?colorPrimaryVariant"
+        android:textSize="32sp"
+        android:text="@string/score_placeholder"
+        app:layout_constraintStart_toEndOf="@id/home_team_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/away_team_name"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:layout_marginHorizontal="16dp"
+        android:fontFamily="@font/firacode_bold"
+        android:textColor="?colorSecondaryVariant"
+        android:textSize="14sp"
+        android:text="@string/date_placeholder"
+        app:layout_constraintStart_toEndOf="@id/home_team_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/away_team_name"/>
+
+    <TextView
+        android:id="@+id/away_team_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:breakStrategy="balanced"
+        android:textAlignment="textEnd"
+        android:fontFamily="@font/firacode_medium"
+        android:textColor="?colorAccent"
+        android:textSize="12sp"
+        android:text="@string/away_team_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/away_team_crest"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/away_team_crest"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/away_team_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/home_team_icon_text"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
