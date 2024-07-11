@@ -21,3 +21,5 @@ Technologies used:
 * __Kotlin Coroutines__
 * __Kotlin Flow__
 * __Glide__ (also __GlideToVectorYou__ for *svg* files)
+
+#### All the data is retrieved from [Football Data API](https://www.football-data.org) (free plan)
