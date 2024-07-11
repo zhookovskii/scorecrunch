@@ -18,6 +18,9 @@ Technologies used:
 * __Navigation Component__
 * __Retrofit__
 * __Room__
+* __Dagger__
+* __Glide__ (also __GlideToVectorYou__ for *svg* files)
 * __Kotlin Coroutines__
 * __Kotlin Flow__
-* __Glide__ (also __GlideToVectorYou__ for *svg* files)
+
+#### All the data is retrieved from [Football Data API](https://www.football-data.org) (free plan)
