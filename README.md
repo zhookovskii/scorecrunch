@@ -24,3 +24,4 @@ Technologies used:
 * __Kotlin Flow__
 
 #### All the data is retrieved from [Football Data API](https://www.football-data.org) (free plan)
+In order to start the app, you need to get a key from Football Data API and place it into [Config](app/src/main/java/com/zhukovskii/scorecrunch/config/Config.kt)
